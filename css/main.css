@@ -1,0 +1,152 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /** 1rem = 10px **/
+    --main-color: rgb(0, 225, 255);
+    --text-color: rgb(39, 39, 39);
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/** Global **/
+body {
+    background-color: #fafafa;
+    font-family: 'Open Sans', sans-serif;
+}
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 4rem;
+    margin: 0;
+    text-transform: uppercase;
+}
+h3 {
+    font-size: 2.2rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+h4 {
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 2px solid #fe4918;
+    padding-bottom: 1rem;
+    font-size: 1.7rem;
+}
+img {
+    max-width: 100%;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/** Utilites **/
+.container {
+    width: 97%;
+    margin: 0 auto;
+}
+@media (min-width: 480px) {
+    .container {
+        width: 95%;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        width: 92%;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 90%;
+        max-width: 1100px;
+    }
+}
+.section {
+    padding: 3rem 0;
+}
+.section p {
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+/** Bar **/
+.bar {
+    background-color: var(--main-color);
+    padding: 2rem;
+    border-bottom: 1px solid var(--text-color);
+}
+.bar-content {
+    display: flex;
+    justify-content: space-between;
+}
+.bar-content a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+.bar-content > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bar-content > div p {
+    flex: 1 0 50%;
+    font-size: 2rem;
+    margin: 0 2rem 0 0;
+}
+.login {
+    display: flex;
+    justify-content: space-between;
+    flex: 1 0 50%;
+}
+.login a {
+    font-size: 2rem;
+    margin-right: 2rem;
+}
+
+/** Main - Aside **/
+.main-product {
+    display: flex;
+    justify-content: space-between;
+}
+.main-product main {
+    flex: 1 0 calc(70% - 1rem);
+}
+.main-product aside {
+    flex: 1 0 calc(30% - 1rem);
+}
+
+/* Main */
+.images-product {
+    min-height: 30rem;
+}
+.main-product main > p {
+    text-align: left;
+}
+/*Comments*/
+.comment {
+    text-align: left;
+}
+.header-comment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-comment img {
+    flex-basis: calc(10% - 1rem);
+    width: 8rem;
+}
+.header-comment p {
+    flex-basis: calc(87% - 1rem);
+    text-align: left;  
+}
+.name-user {
+    text-transform: capitalize;
+}
+.comment .comment-user {
+    text-transform: none;
+    text-align: left;
+    margin: 1.5rem 2.5rem;
+}
+
+
+
