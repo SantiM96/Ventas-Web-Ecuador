@@ -1,0 +1,11 @@
+{
+    "version": 2,
+    "name": "Plataforma",
+    "routes": [
+        { "src": "/api/(.*)", "dest": "/api/index.js"}
+    ],
+    "env":{
+        "MONGODB_URI": "@mongodb-uri"
+    }
+}
+
