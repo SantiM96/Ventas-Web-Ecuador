@@ -1,7 +1,9 @@
 {
     "version": 2,
+    "public": true,
     "name": "Plataforma",
     "routes": [
+        { "src": "/img" },
         { "src": "/api/(.*)", "dest": "/api/index.js"}
     ],
     "env":{
