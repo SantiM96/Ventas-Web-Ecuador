@@ -5,7 +5,8 @@ const artitles = mongoose.model("artitle", new Shema ({
     titulo: String,
     desc: String,
     img: String,
-    precio: Number,
+    precio: String,
+    cat: String,
     cantidad: Number
 }))
 
